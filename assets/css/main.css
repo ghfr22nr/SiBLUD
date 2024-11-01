@@ -752,7 +752,7 @@ section,
 .section-title h2:before,
 .section-title h2:after {
   content: "";
-  width: 100px;
+  width: 50px;
   height: 2px;
   background: var(--accent-color);
   display: inline-block;
@@ -1067,6 +1067,25 @@ section,
 }
 
 .constructions .card-item .card-bg img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.constructions .card-bg {
+  min-height: 300px;
+  position: relative;
+}
+
+.constructions .card-bg img {
   position: absolute;
   inset: 0;
   display: block;
